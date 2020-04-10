@@ -1,0 +1,73 @@
+.paper{
+    width: 600px;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 25px 10px rgb(223, 210, 210);
+background: rgb(0, 0, 0);
+}
+.paper span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #e07c00;
+}
+.block_login{
+    display: block;
+    margin-top: 40px;
+}
+.block_login input{
+    color: #b75120;
+    padding: 3px 3px;
+    border-radius: 3px;
+}
+.block_login input:hover{
+    box-shadow: 0px 0px 10px 5px rgb(196, 144, 1);
+  }
+
+input{
+    border: 1px solid green;
+    background-color: #00000000;
+    border-radius: 2px;
+    color: rgb(8, 233, 165);
+    font-weight: 600; 
+    text-align: center;margin-bottom: 20px;
+    margin: 20px 10px 0 10px;
+    border: 2px solid #4a8868;
+    cursor: pointer;
+}
+input::placeholder{
+    color: rgb(117, 139, 151);  
+    font-weight: 400; 
+    text-align: center;
+  }
+  .width_input{
+    width: 180px;
+    font-size: 15px;
+    padding: 5px 5px;
+  }
+  .width_input_clear{
+    font-size: 15px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-weight: 300;
+  }
+  .width_input_clear:hover{
+    box-shadow: 0px 0px 10px 5px rgb(196, 144, 1);
+  }
+  .check_sub{
+    width: 380px;
+    font-size: 20px;
+    padding: 6px 6px;
+    color: rgb(148, 98, 7);
+    border-radius: 10px;
+  }
+  .check_sub:hover{
+    box-shadow: 0px 0px 10px 5px rgb(196, 144, 1);
+  }
+.color_text{
+    padding-top: 10px;
+    color: rgb(173, 157, 127);
+    font-weight: 600; 
+    font-size: 23px;
+}
