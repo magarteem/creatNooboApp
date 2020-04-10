@@ -33,7 +33,7 @@ const Bag = (props) => {
         let text_value = Href.current.value;
         // props.ubdateTodayTextarea(text_value)
         let action = change_Bag_ActioaCreator(text_value);
-        props.dispatch(action)
+        props.dispatch(action) 
     }
 
     return (
