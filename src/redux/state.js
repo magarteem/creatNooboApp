@@ -54,6 +54,7 @@ let store = {
     subscribe(observer) { this._render_Tree = observer; },
 
     dispatch(action) {
+        // #1 this._state.today будет равен пути в редюсере на todayReduser в переменной state
         this._state.today = todayReduser(this._state.today, action)
 
         this._render_Tree(this._state);

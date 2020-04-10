@@ -52,8 +52,7 @@ const Bag = (props) => {
                 <Route  path="/today/bag/comigo" render={() => <Comigo_bag data={props.data} dispatch={props.dispatch} />} />
             </div>
             <div className={s.grid3}>
-                <p><textarea ref={Href} value={props.data.textarea} onChange={Change_bag} /><button onClick={Alert}>dddd</button></p>
-
+                <p><textarea ref={Href} value={props.data.today.textarea} onChange={Change_bag} /><button onClick={Alert}>dddd</button></p>
             </div>
         </div >
     )

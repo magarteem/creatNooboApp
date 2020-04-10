@@ -3,8 +3,9 @@ const UPDATE_TODAY_TEXTAREA = 'UPDATE_TODAY_TEXTAREA'
 
 const todayReduser = (state, action) => { // 2 после вызова диспатч  идет в ADD_DATA_BAG если кнопку добавить нажали
                                          // или в UPDATE_TODAY_TEXTAREA если нужно обновлять текст арею
-        switch (action.type) {
-        
+                              
+// #1 получаем путь от диспатча в переменную state и работает в этом пути state.data_bag.push(temp);  state.textarea = '';
+        switch (action.type) {        
         case ADD_DATA_BAG:// 3.б при нажатии на добавить пушим в state.data_bag созданный temp, где textError это взятый из state.textarea когда писали текст через UPDATE_TODAY_TEXTAREA
             let temp = {
                 number: 8,
@@ -15,7 +16,7 @@ const todayReduser = (state, action) => { // 2 после вызова дисп�
             state.textarea = '';
             return state;
         case UPDATE_TODAY_TEXTAREA:   // 3.а при обновлении  текстареи в стайт заносится action.ubdate_Textarea полученный через text_value в change_Bag_ActioaCreator
-            state.textarea = action.ubdate_Textarea;
+            state.textarea = action.ubdate_Textarea; // тут обновляем value textarea в пути state.textarea получая данные от action.ubdate_Textarea
             return state;
     }
 }

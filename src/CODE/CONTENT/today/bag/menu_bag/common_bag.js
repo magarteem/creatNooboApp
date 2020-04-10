@@ -16,7 +16,6 @@ let ErrorID = (props) => {
 }
 
 const Common_bag = (props) => {    
-    debugger
     let map_menuError = props.data.today.data_bag.map(el => <ErrorID id={el.number} err={el.error} text={el.textError} />)
     return(
         <div>
