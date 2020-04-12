@@ -1,0 +1,49 @@
+.grid{
+    display: grid;    
+    grid-template-columns: 1% 1fr;
+    grid-template-rows: 30px 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+    "div1 div1"
+    "div2 div3"; 
+    /* text-align: center; */
+}
+.grid1{
+    grid-area: div1;
+    /* background: rgb(54, 212, 23); */
+}
+.grid2{
+    grid-area: div2;
+    /* background: rgb(63, 176, 190); */
+}
+.grid3{
+    grid-area: div3;
+    /* background: rgb(54, 52, 189); */
+}
+/* ==================================== */
+.nav_grid{
+    display: grid;    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+    "nav1 nav2 nav3 nav4 nav5 nav6 nav7";
+    text-align: center; 
+}
+/* .nav_grid a{
+    text-decoration: none;  
+} */
+.nav1, .nav2, .nav3, .nav4, .nav5, .nav6, .nav7{
+  color: #ff6701;
+  background-color: #1a1a1b;
+  padding: 3px 20px;  
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid rgb(139, 139, 139);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.nav_grid a:hover{
+    color: #01ff6b;
+    background-color: #000000;
+}

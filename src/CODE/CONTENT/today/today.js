@@ -11,6 +11,7 @@ let Today_menu = (props) => {
     )
 }
 const Today = (props) => {
+    // debugger
     return (
         <div className={s.grid}>
             <div className={s.grid1}>

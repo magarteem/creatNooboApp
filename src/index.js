@@ -6,7 +6,7 @@ import s from './App.module.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
-let render_Tree = (state) => {
+let rerenderEntareTree = (state) => {
     ReactDOM.render(
         <BrowserRouter>
             <App
@@ -14,10 +14,10 @@ let render_Tree = (state) => {
                 dispatch={store.dispatch.bind(store)}
             />
         </BrowserRouter>,
-        document.getElementById('root'));
+        document.getElementById('root'));  
 }
 
-render_Tree(store.getState());
-store.subscribe(render_Tree);
+rerenderEntareTree(store.getState());
+store.subscribe(rerenderEntareTree);
 
 serviceWorker.unregister();

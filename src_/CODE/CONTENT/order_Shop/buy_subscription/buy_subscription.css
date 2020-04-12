@@ -1,0 +1,40 @@
+
+.levo li a{  
+  text-decoration:none;
+  font-weight:400;
+  font-size:18px;
+  margin-left:25px;}
+  
+table{
+  margin:auto;
+  margin-top:30px;
+  border:10px solid #708090;
+}
+
+td{    
+  padding:3px 3px;
+  color:#000;
+  font-size:15px;
+  font-weight:600;
+  text-align:center;
+  border: 2px solid #000;
+  
+  
+  
+}
+
+.style_line{
+  border-right-width:1px;
+}
+
+.yellow-1{
+  background:#DBBB52;  
+}
+.yellow-2{
+  background:#90CEAE;  
+}
+.blue-2{
+  background:#04B4AE;
+}
+.gradient{
+   background:#F4A460;}

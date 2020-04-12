@@ -9,11 +9,12 @@ import Today from './today/today'
 
 
 const CONTENT = (props) => {
+    // debugger
     return (
         <div className={s.content}>
             {/* <Route path="/Order_shoop" component={Order_Shoop} /> */}
             {/* <Route path="/Order_shoop" render={() => <Order_Shoop Ord_Shoop={props.Ord_Shoop}/>} /> */}
-            <Route path="/Order_shoop" render={() => <Order_Shoop Ord_Shoop={props.data.Ord_Shoop}/>} />
+            <Route path="/Order_shoop" render={() => <Order_Shoop data={props.data} dispatch={props.dispatch}/>} />
             <Route path="/Oficial_shoop" component={Oficial_shoop} />
             <Route path="/today" render={() => <Today  data={props.data} dispatch={props.dispatch}/>} />
         </div>

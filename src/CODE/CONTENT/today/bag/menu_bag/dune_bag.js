@@ -18,7 +18,7 @@ let ErrorID = (props) => {
 }
 
 const Dune_bag = (props) => {  
-    let map_menuError = props.data.today.dune_dag.dune_data_dag.map(el => <ErrorID id={el.number} err={el.error} text={el.textError} />)
+    let map_menuError = props.data.today.dune_dag.map(el => <ErrorID id={el.number} err={el.error} text={el.textError} />)
     return(
         <div>
             {map_menuError}
