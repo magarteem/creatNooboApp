@@ -1,9 +1,18 @@
 import React from 'react';
 import s from './today.module.css'
 import { Route, NavLink } from 'react-router-dom';
-import Test1 from '../order_Shop/test/test1'
+// import Test1 from '../order_Shop/test/test1'
 import Bag from './bag/bag';
 
+let today = {
+    data_today: [
+        { path: "order", name: "Заказы" },
+        { path: "tehno", name: "Технишн" },
+        { path: "bag", name: "Баги" },
+        { path: "aktion", name: "Акции" },
+        { path: "info", name: "Инфо" }
+    ]
+}
 let Today_menu = (props) => {
     let path = "/today/" + props.path;
     return (
@@ -16,16 +25,16 @@ const Today = (props) => {
         <div className={s.grid}>
             <div className={s.grid1}>
                 <div className={s.nav_grid}>
-                    <Today_menu clas_es={s.nav1} path={props.data.today.data_today[0].path} name={props.data.today.data_today[0].name} />
-                    <Today_menu clas_es={s.nav2} path={props.data.today.data_today[1].path} name={props.data.today.data_today[1].name} />
-                    <Today_menu clas_es={s.nav3} path={props.data.today.data_today[2].path} name={props.data.today.data_today[2].name} />
-                    <Today_menu clas_es={s.nav4} path={props.data.today.data_today[3].path} name={props.data.today.data_today[3].name} />
-                    <Today_menu clas_es={s.nav5} path={props.data.today.data_today[4].path} name={props.data.today.data_today[4].name} />
+                    <Today_menu clas_es={s.nav1} path={today.data_today[0].path} name={today.data_today[0].name} />
+                    <Today_menu clas_es={s.nav2} path={today.data_today[1].path} name={today.data_today[1].name} />
+                    <Today_menu clas_es={s.nav3} path={today.data_today[2].path} name={today.data_today[2].name} />
+                    <Today_menu clas_es={s.nav4} path={today.data_today[3].path} name={today.data_today[3].name} />
+                    <Today_menu clas_es={s.nav5} path={today.data_today[4].path} name={today.data_today[4].name} />
                 </div>
             </div>
             <div className={s.grid2}></div>
             <div className={s.grid3}>
-                <Route path="/today/order" component={Test1} />
+                {/* <Route path="/today/order" component={Test1} /> */}
                 <Route path="/today/bag" render={() =>
                     <Bag
                         data={props.data}

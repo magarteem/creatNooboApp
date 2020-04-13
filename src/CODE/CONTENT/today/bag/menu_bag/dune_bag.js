@@ -1,7 +1,5 @@
 import React from 'react';
 import s from '../bag.module.css'
-// import {dell_BagDUNE_ActioaCreator} from '../../../../../redux/dell_reduser'
-
 
 let ErrorID = (props) => {
     return (
@@ -18,7 +16,7 @@ let ErrorID = (props) => {
 }
 
 const Dune_bag = (props) => {  
-    let map_menuError = props.data.today.dune_dag.map(el => <ErrorID id={el.number} err={el.error} text={el.textError} />)
+    let map_menuError = props.data.today.dune_data_bag.dune_dag.map(el => <ErrorID id={el.number} err={el.error} text={el.textError} />)
     return(
         <div>
             {map_menuError}

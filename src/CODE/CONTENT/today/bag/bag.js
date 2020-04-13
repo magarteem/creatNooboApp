@@ -1,40 +1,14 @@
 import React from 'react';
 import s from './bag.module.css'
-import { add_Date_Bag_ActioaCreator, change_Bag_ActioaCreator } from '../../../../redux/todayReduser'
+// import { add_Date_Bag_ActioaCreator, change_Bag_ActioaCreator } from '../../../../redux/common_REDUSER'
 import { Route, NavLink } from 'react-router-dom';
 import Dune_bag from './menu_bag/dune_bag'
 import Common_bag from './menu_bag/common_bag'
 import Comigo_bag from './menu_bag/comigo_bag'
 
-let ErrorID = (props) => { /**/
-    return (
-        <div>
-            <div className={s.grid_bag}>
-                <div className={s.grid_bag1}>
-                    <span>{props.id}</span>
-                </div>
-                <div className={s.grid_bag2}><span>{props.err}</span></div>
-                <div className={s.grid_bag3}><span>{props.text}</span></div>
-            </div>
-        </div>
-    )
-}
-
 
 
 const Bag = (props) => {
-    let Href = React.createRef();
-    let Alert = () => { //показать вывод в тексареа
-        // props.addData_bag()
-        props.dispatch(add_Date_Bag_ActioaCreator())
-    }
-
-    let Change_bag = () => {// добавить баг запись
-        let text_value = Href.current.value;
-        // props.ubdateTodayTextarea(text_value)
-        let action = change_Bag_ActioaCreator(text_value);
-        props.dispatch(action) 
-    }
 
     return (
         <div className={s.grid}>
@@ -51,9 +25,9 @@ const Bag = (props) => {
                 <Route  path="/today/bag/dune" render={() => <Dune_bag data={props.data} dispatch={props.dispatch} />} />
                 <Route  path="/today/bag/comigo" render={() => <Comigo_bag data={props.data} dispatch={props.dispatch} />} />
             </div>
-            <div className={s.grid3}>
-                <p><textarea ref={Href} value={props.data.today.textarea} onChange={Change_bag} /><button onClick={Alert}>dddd</button></p>
-            </div>
+            {/* <div className={s.grid3}>
+                <p><textarea ref={Href} value={props.data.today.common_data_bag.textarea} onChange={Change_bag} /><button onClick={Alert}>dddd</button></p>
+            </div> */}
         </div >
     )
 }

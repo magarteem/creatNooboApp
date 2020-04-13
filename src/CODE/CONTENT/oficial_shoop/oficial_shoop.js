@@ -3,8 +3,6 @@ import s from './oficial_shoop.module.css'
 
 import {  Route } from 'react-router-dom';//**** */
 import { NavLink } from 'react-router-dom';//**** */
-import Test1 from '../order_Shop/test/test1'/**** */
-import Test2 from '../order_Shop/test/test2'/**** */
 
 const Oficial_shoop = () => {
     return (
@@ -19,8 +17,8 @@ const Oficial_shoop = () => {
                 <div className={s.nav7}>Буквы</div>
             </div>
             <div>
-                <Route path="/Oficial_shoop/test1" component={Test1} />
-                <Route path="/Oficial_shoop/test2" component={Test2} />
+                {/* <Route path="/Oficial_shoop/test1" component={Test1} /> */}
+                {/* <Route path="/Oficial_shoop/test2" component={Test2} /> */}
             </div>
         </div>
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 import s from '../bag.module.css'
-import { DAEE_Bag_ActioaCreator, DAEE_item_ActioaCreator } from '../../../../../redux/dell_item_comigo';
+import { DAEE_Bag_ActioaCreator, DAEE_item_ActioaCreator } from '../../../../../redux/dell_item_comigo_REDUSER';
 
 
 let ErrorID = (props) => {
@@ -17,7 +17,7 @@ let ErrorID = (props) => {
     )
 }
 const Comigo_bag = (props) => {
-    
+    debugger
     let Href = React.createRef();
     let Deell_bag = () => {
         let text_value = Href.current.value;
@@ -38,7 +38,7 @@ const Comigo_bag = (props) => {
             {map_menuError}
             <p>
                 <textarea ref={Href} value={props.data.comigo_dag.textarea} onChange={Deell_bag} />
-                <button onClick={Deell_item}>dddd</button>
+                <button onClick={Deell_item}>DELL</button>
             </p>
         </div>
     )
